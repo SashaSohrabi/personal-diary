@@ -2,3 +2,43 @@
 
 @import "tailwindcss";
 @plugin "daisyui";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-100 min-h-screen font-sans antialiased;
+    background-image: radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.18), transparent 55%),
+      radial-gradient(circle at 80% 0%, rgba(14, 165, 233, 0.12), transparent 45%),
+      linear-gradient(135deg, #020617 0%, #0f172a 45%, #0b1220 100%);
+    background-attachment: fixed;
+  }
+
+  #root {
+    @apply min-h-screen flex flex-col;
+  }
+
+  main {
+    @apply flex-1 pb-12;
+  }
+
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  ::selection {
+    @apply bg-secondary text-secondary-content;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-base-100/80 backdrop-blur-xl border border-white/10 shadow-[0_20px_45px_-20px_rgba(15,23,42,0.7)];
+  }
+
+  .card-elevated {
+    @apply bg-base-100/80 backdrop-blur-xl border border-white/10 shadow-[0_20px_45px_-20px_rgba(15,23,42,0.7)] rounded-3xl p-6 transition-all duration-300 hover:border-white/20;
+  }
+}
