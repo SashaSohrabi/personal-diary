@@ -9,7 +9,7 @@ const MainLayout = () => {
 
   return (
     <>
-      <NavBar />
+      <NavBar cart={cart}/>
       <main className="mx-auto w-full max-w-6xl flex-1 px-4 pb-16 pt-6 sm:pt-8 lg:px-6">
         <Outlet context={{ cart, setCart }} />
       </main>

@@ -86,7 +86,7 @@ const Alert = ({ message, type }) => {
   return (
     <div
       role='alert'
-      className={`alert glass-panel flex items-center gap-3 rounded-2xl border border-white/10 text-slate-100 ${alertTone}`}
+      className={`alert bg-primary flex items-center gap-3 rounded-2xl border border-white/10 text-slate-100 ${alertTone}`}
     >
       {renderIcon(type)}
       <span>{message}</span>

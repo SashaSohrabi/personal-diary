@@ -1,4 +1,5 @@
 import Alert from './Alert';
+import CartTable from './CartTable';
 import CategoriesSkeleton from './CategoriesSkeleton';
 import CategoryLinks from './CategoryLinks';
 import Logo from './Logo';
@@ -8,6 +9,7 @@ import ProductCardSkeleton from './ProductCardSkeleton';
 
 export {
   Alert,
+  CartTable,
   CategoriesSkeleton,
   CategoryLinks,
   Logo,
