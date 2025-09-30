@@ -52,7 +52,7 @@ const ProductCard = ({ cart, product, setCart }) => {
                 {productInCart.quantity}
               </span>
               <button
-                className='btn btn-sm btn-primary shadow-lg shadow-primary/40'
+                className='btn btn-sm btn-primary shadow-md shadow-primary/40'
                 onClick={() => setCart(prev => addToCart(prev, product))}
               >
                 +
@@ -60,7 +60,7 @@ const ProductCard = ({ cart, product, setCart }) => {
             </div>
           ) : (
             <button
-              className='btn btn-sm btn-primary shadow-lg shadow-primary/40'
+              className='btn btn-sm btn-primary shadow-md shadow-primary/40'
               onClick={() => setCart(prev => addToCart(prev, product))}
             >
               Add to cart
