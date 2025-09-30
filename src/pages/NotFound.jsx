@@ -15,9 +15,6 @@ const NotFound = () => (
         <Link to="/" className="btn btn-primary btn-wide sm:btn-md shadow-md shadow-primary/40">
           Return home
         </Link>
-        <Link to="/category/electronics" className="btn btn-outline btn-secondary border-white/20 text-slate-200">
-          Browse categories
-        </Link>
       </div>
     </div>
   </section>
