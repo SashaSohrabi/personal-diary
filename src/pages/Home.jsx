@@ -50,7 +50,7 @@ const Home = () => {
           <h2 className="text-lg font-semibold text-slate-100">
             Browse by category
           </h2>
-          <span className="text-xs uppercase tracking-[0.2em] text-slate-500">
+          <span className="text-xs uppercase tracking-[0.2em] text-slate-500 sm:hidden">
             Swipe to explore
           </span>
         </div>

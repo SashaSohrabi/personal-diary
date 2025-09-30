@@ -7,7 +7,7 @@ const NavBar = ({ cart }) => {
   const renderCartIcon = (badgeClassName) => (
     <div className="indicator flex h-full w-full items-center justify-center">
       <span
-        className={`indicator-item badge badge-xs border-0 font-medium ${badgeClassName}`}
+        className={`indicator-item badge -translate-y-2 h-5 w-5 badge-xs border-0 rounded-full font-medium ${badgeClassName}`}
       >
         {cartCount}
       </span>
@@ -34,12 +34,12 @@ const NavBar = ({ cart }) => {
         <div className="glass-panel flex items-center justify-between gap-4 rounded-[28px] px-6 py-4">
           <Logo />
           <p className="hidden text-sm font-medium text-slate-300 lg:block">
-            Thoughtfully designed finds for modern living.
+            Discover essential pieces for a smarter everyday.
           </p>
           <nav className="flex items-center gap-2">
             <Link
               to="/"
-              className="btn btn-ghost btn-sm text-slate-200 transition-colors duration-200 hover:bg-transparent hover:text-primary"
+              className="relative flex h-11 w-11 items-center justify-center rounded-full text-slate-200 transition-colors duration-200 hover:bg-primary/15 hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
               aria-label="Home"
             >
               <svg
