@@ -50,7 +50,7 @@ const CartTable = ({ cart, setCart }) => {
                   </div>
                 </td>
                 <td className='max-w-xl align-middle text-sm text-slate-300'>
-                  <p className='opacity-80'>{item.description}</p>
+                  <p className='opacity-80 line-clamp-3 sm:line-clamp-none'>{item.description}</p>
                   <Link
                     to={`/category/${item.category}`}
                     className='mt-3 inline-flex items-center gap-2 rounded-full bg-base-200/60 px-3 py-1 text-xs uppercase tracking-[0.18em] text-slate-300 transition-colors duration-200 hover:bg-primary/20 hover:text-primary'
