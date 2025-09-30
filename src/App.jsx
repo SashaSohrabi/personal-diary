@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router';
 import { MainLayout } from './layouts';
-import { Home, Category, Cart } from '@/pages';
+import { Home, Category, Cart, NotFound } from '@/pages';
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="category/:name" element={<Category />} />
           <Route path="cart" element={<Cart />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </>
