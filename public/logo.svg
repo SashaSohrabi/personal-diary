@@ -1,0 +1,45 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>NovaMart logo mark</title>
+  <defs>
+    <linearGradient id="novaGradient" x1="8" y1="56" x2="56" y2="8" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0EA5E9" />
+      <stop offset="0.45" stop-color="#6366F1" />
+      <stop offset="1" stop-color="#F97316" />
+    </linearGradient>
+    <linearGradient id="bagGradient" x1="20" y1="50" x2="44" y2="24" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F172A" stop-opacity="0.2" />
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.9" />
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="18" fill="url(#novaGradient)" />
+  <path
+    d="M20 26.5C20 23.4624 22.4624 21 25.5 21H38.5C41.5376 21 44 23.4624 44 26.5V45C44 48.0376 41.5376 50.5 38.5 50.5H25.5C22.4624 50.5 20 48.0376 20 45V26.5Z"
+    fill="url(#bagGradient)"
+    opacity="0.85"
+  />
+  <path
+    d="M25.5 26.5C25.5 22.9101 28.4101 20 32 20C35.5899 20 38.5 22.9101 38.5 26.5"
+    stroke="white"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+  <path
+    d="M24 33.5C24 31.8431 25.3431 30.5 27 30.5H37C38.6569 30.5 40 31.8431 40 33.5V39.5C40 41.1569 38.6569 42.5 37 42.5H27C25.3431 42.5 24 41.1569 24 39.5V33.5Z"
+    fill="#0F172A"
+    fill-opacity="0.12"
+  />
+  <path
+    d="M27 33.5H37"
+    stroke="#F8FAFC"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-opacity="0.55"
+  />
+  <circle cx="39.5" cy="18.5" r="6.5" fill="#0F172A" fill-opacity="0.2" />
+  <path
+    d="M44 18.5C44 21.5376 41.5376 24 38.5 24C35.4624 24 33 21.5376 33 18.5C33 15.4624 35.4624 13 38.5 13C41.5376 13 44 15.4624 44 18.5Z"
+    fill="white"
+    fill-opacity="0.92"
+  />
+  <circle cx="41" cy="16" r="2" fill="#F97316" />
+</svg>
