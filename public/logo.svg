@@ -1,26 +1,34 @@
 <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <title>Nova logo</title>
+  <title>Personal Diary logo</title>
   <defs>
-    <radialGradient id="novaGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32 32) scale(26)">
-      <stop offset="0" stop-color="#38BDF8" stop-opacity="0.4" />
-      <stop offset="1" stop-color="#0F172A" stop-opacity="0" />
-    </radialGradient>
-    <linearGradient id="novaRing" x1="12" y1="52" x2="52" y2="12" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#0EA5E9" />
-      <stop offset="0.45" stop-color="#2563EB" />
-      <stop offset="1" stop-color="#1E3A8A" />
+    <linearGradient id="coverGradient" x1="12" y1="8" x2="52" y2="56" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F8B4D9" />
+      <stop offset="1" stop-color="#8B5CF6" />
     </linearGradient>
-    <linearGradient id="novaHighlight" x1="18" y1="48" x2="46" y2="16" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="rgba(255,255,255,0.18)" />
-      <stop offset="1" stop-color="rgba(255,255,255,0.45)" />
+    <linearGradient id="pageGradient" x1="20" y1="14" x2="44" y2="50" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95" />
+      <stop offset="1" stop-color="#E2E8F0" stop-opacity="0.9" />
     </linearGradient>
+    <linearGradient id="bookmarkGradient" x1="40" y1="12" x2="40" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#F472B6" />
+      <stop offset="1" stop-color="#DB2777" />
+    </linearGradient>
+    <linearGradient id="highlight" x1="24" y1="20" x2="24" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#CBD5F5" stop-opacity="0.65" />
+      <stop offset="1" stop-color="#A5B4FC" stop-opacity="0" />
+    </linearGradient>
+    <filter id="softShadow" x="8" y="6" width="48" height="56" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="rgba(15,23,42,0.18)" />
+    </filter>
   </defs>
-  <circle cx="32" cy="32" r="28" fill="url(#novaRing)" />
-  <circle cx="32" cy="32" r="22" fill="url(#novaGlow)" />
-  <circle cx="32" cy="32" r="27" stroke="rgba(255,255,255,0.2)" stroke-width="2" />
-  <path d="M18 40C20.4 36.6 24.6 32 32 32C39.4 32 43.6 36.6 46 40" stroke="url(#novaHighlight)" stroke-width="2.2" stroke-linecap="round" />
-  <path d="M22 22.5L27.8 33.2C28.6 34.7 30.8 34.7 31.6 33.2L37 22.5" stroke="rgba(255,255,255,0.55)" stroke-width="2" stroke-linecap="round" />
-  <text x="32" y="36" text-anchor="middle" font-family="'Manrope', 'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="0.4em" fill="#F8FAFC" dominant-baseline="middle">
-    NOVA
-  </text>
+  <g filter="url(#softShadow)">
+    <rect x="12" y="10" width="40" height="48" rx="8" fill="url(#coverGradient)" />
+    <rect x="18" y="14" width="28" height="40" rx="6" fill="url(#pageGradient)" />
+    <path d="M40 12L40 36" stroke="url(#bookmarkGradient)" stroke-width="6" stroke-linecap="round" />
+    <path d="M26 24C27.7 22.2 30.5 22.2 32.2 24C33.6 25.6 34.3 29.1 31 32.2L29 34.1L27 32.2C23.8 29.1 24.4 25.6 25.8 24Z" fill="#F472B6" />
+    <path d="M22 34H36" stroke="#CBD5F5" stroke-width="1.6" stroke-linecap="round" />
+    <path d="M22 39H36" stroke="#CBD5F5" stroke-width="1.6" stroke-linecap="round" />
+    <path d="M22 29H24.5" stroke="#CBD5F5" stroke-width="1.6" stroke-linecap="round" />
+    <rect x="18" y="14" width="6" height="40" rx="6" fill="url(#highlight)" />
+  </g>
 </svg>
